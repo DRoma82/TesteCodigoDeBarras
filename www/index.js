@@ -4,9 +4,10 @@ $(function () {
 
 function fnLer()
 {
-    alert(cordova.require);
-    var scanner = cordova.require("cordova/plugin/BarcodeScanner");
-    alert(scanner);
+    //var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+    alert(cordova.plugins);
+    alert(cordova.plugins.barcodeScanner);
+    var scanner = cordova.plugins.barcodeScanner;
 
     scanner.scan(function (result) {
         alert("We got a barcode\n" +
