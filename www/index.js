@@ -4,5 +4,5 @@ $(function () {
 
 function fnLer()
 {
-    navigator.notification.vibrate(1000);
+    navigator.notification.vibrate(500);
 }
