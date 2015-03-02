@@ -4,10 +4,8 @@ $(function () {
 
 function fnLer()
 {
-    //var scanner = cordova.require("cordova/plugin/BarcodeScanner");
-    alert(cordova.plugins);
-    alert(cordova.plugins.barcodeScanner);
-    var scanner = cordova.plugins.barcodeScanner;
+    var scanner = cordova.require("com.phonegap.plugins.barcodescanner.BarcodeScanner");
+    alert(scanner);
 
     scanner.scan(function (result) {
         alert("We got a barcode\n" +
