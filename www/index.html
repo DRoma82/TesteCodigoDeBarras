@@ -14,13 +14,18 @@
         <link rel="stylesheet" type="text/css" href="index.css" />
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        
+        <div data-role="page" id="pagMain">
+            <div id="divMainHeader" data-role="header">
+                <h1>Teste - Código de Barras</h1>
+            </div>
+
+            <div id="divMainContent" data-role="content">
+                
+                <button id="btnLer" onclick="fnLer()">Ler Código</button>
+
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+
     </body>
 </html>

@@ -1,4 +1,8 @@
 $(function () {
-    alert('Hello World!')
+    
 });
 
+function fnLer()
+{
+    alert('Hello World!');
+}
